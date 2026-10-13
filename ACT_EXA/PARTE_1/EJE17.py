@@ -14,7 +14,6 @@ if a == 0:
 else:
     discriminante = b**2 - 4*a*c
     
-    
     if discriminante < 0:
         print("no existen soluciones reales")
         
@@ -25,7 +24,7 @@ else:
         print("x2 = ", sol2)
         print("no existen soluciones reales")
 
-    elif discriminante = 0:
+    elif discriminante == 0:
         sol3 = (-b / (2*a))
         print("x1 = ", sol3)
         print("x2 = ", sol3)
