@@ -6,13 +6,21 @@ Jaime Escriche Garcia
 notas = int(input("¿Cuántas notas? "))
 
 suma = 0
+suspensos = 0
+aprobados = 0
 
 for i in range (1, notas + 1):
     n_notas = int(input("Nota" + str(i) + ":"))
     suma = suma + n_notas
-    media = suma / notas
+    if n_notas >= 5:
+        aprobados = aprobados + 1
+    else:
+        suspensos = suspensos + 1
 
+
+
+media = suma / notas
+        
 print("nota media:", media)
-
-if n_notas => 5:
-    print("Aprobados: ")
+print("Aprobados:", aprobados)
+print("Suspensos:", suspensos)
