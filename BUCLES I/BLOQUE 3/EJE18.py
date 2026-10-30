@@ -18,3 +18,6 @@ while numero != aleatorio:
         print("El número es menor")
 
     numero = int(input("Adivina el número(1-10): "))
+
+    if numero == aleatorio:
+        print("¡Correcto! Has adivinado el número en", contador, "intentos.")
